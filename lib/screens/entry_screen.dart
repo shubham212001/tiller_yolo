@@ -1,6 +1,8 @@
 ///File download from FlutterViz- Drag and drop a tools. For more details visit https://flutterviz.io/
 
 import 'package:flutter/material.dart';
+import 'package:tiller_yolo/screens/camera_capture_screen.dart';
+import 'package:camera/camera.dart';
 
 class tiller_welcome_edit extends StatelessWidget {
   @override
@@ -90,7 +92,22 @@ class tiller_welcome_edit extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 16),
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+Navigator.push(
+  context,
+  MaterialPageRoute(
+    builder: (context) => FullScreenCameraScreen(),
+  ),
+);
+
+
+
+
+
+
+
+
+                    },
                     color: Color(0xff3a57e8),
                     elevation: 0,
                     shape: RoundedRectangleBorder(
